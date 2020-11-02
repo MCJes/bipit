@@ -1,0 +1,171 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Palatino, URW Palladio L, serif;
+    font-size: 20px;
+}
+
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F0FFFF;
+}
+
+.main__right {
+    border-right: rgb(55, 102, 96) 2px solid;
+    -webkit-box-shadow: 0px -1px 8px 0px rgba(0,0,0,1); 
+    box-shadow: 0px -1px 8px 0px rgba(0,0,0,1);
+    display: inherit;
+    flex-flow: column wrap;
+    width: 15%;
+    align-items: center;
+    background-color: rgba(95, 158, 160, 1);
+    height: 100vh;
+}
+
+
+.main__right ul {
+    margin-top: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main__right li {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 100%;
+    list-style: none;   
+    border-bottom: rgb(55, 102, 96) 2px solid;
+    border-collapse: collapse;
+    outline: none;
+}
+
+.main__right li:first-child {
+    border-top: rgb(55, 102, 96) 2px solid;
+}
+
+.main__right li:hover {
+    cursor: pointer;
+    background-color: rgba(95, 158, 160, 0.7);
+    -webkit-box-shadow: 0px -1px 8px 0px rgba(0,0,0,0.6); 
+    box-shadow: 0px -1px 8px 0px rgba(0,0,0,0.6);
+}
+
+.main__right li:active {
+    transform: scale(0.95);
+    transition: all 50ms;
+    border-radius: 6px;
+}
+
+
+.main__right a {
+    padding: 5px;
+    color: white !important;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+.main__container {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    
+    /* margin-top: 100px; */
+
+}
+
+.table {
+    width: 75%;
+    display: inherit;
+    justify-content: center;
+    flex-flow: nowrap row;
+
+}
+
+.table__controllers {
+    padding: 15px;
+    display: flex;
+    flex-flow: wrap column;
+    background-color: lavender;
+}
+
+.table__content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+input {
+    font-family: Palatino, URW Palladio L, serif;
+    font-size: 16px;
+}
+
+.btn {
+    margin: 10px;
+    padding: 5px;
+}
+
+.show, .delete {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: wrap column;
+    border-bottom: black 2px solid;
+}
+
+.delete {
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border: none;
+    background-color: rgb(78, 127, 252);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+    border: none;
+    padding: 10px;
+}
+
+tr:nth-child(2n) {
+    background: rgb(255, 255, 255);
+} 
+
+tr {
+    border: none;
+    border-bottom: rgb(116, 154, 250) 2px solid;
+}
+
+.addPanel {
+    display: flex;
+}
+
+.add__inputs {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    flex-flow: column wrap;
+    /* align-items: center; */
+}
+
+.aspNetDisabled {
+    pointer-events: none;
+}
